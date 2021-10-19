@@ -12,6 +12,7 @@ html {
 
 body {
   margin: 0;
+  background-color: var(--background-color);
 }
 
 img {
@@ -22,7 +23,7 @@ img {
 .hero-image {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/images/pexels-kelly-lacy-2881370.jpg");
+  background-image: url("../assets/images/pexels-kelly-lacy-2881370.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +54,7 @@ h1 {
 
 .tour-link {
   height: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-size: 1.1rem;
   font-weight: lighter;
   text-align: center;
@@ -63,6 +64,7 @@ h1 {
 }
 
 .about-us {
+  /* margin-top: 1rem; */
   background-color: var(--background-color);
 }
 
@@ -79,6 +81,7 @@ h1 {
   margin-top: 0.5rem;
   color: var(--purple-color);
   font-weight: bold;
+  font-size: 2rem;
   text-align: justify;
 }
 .about-us-description-p {
@@ -98,20 +101,23 @@ h1 {
 .info-description-title {
   color: var(--purple-color);
   text-align: center;
+  margin-bottom: 0;
+  font-size: 2rem;
 }
 .info-description-p {
   padding: 0.5rem;
   color: #000;
+  margin-top: .5rem;
 }
 
 .perfil-1 {
-  background-image: url("../assets/images/perfil-1.jpg");
+  background-image: url("../assets/images/perfil-1.webp");
 }
 .perfil-2 {
-  background-image: url("../assets/images/perfil-2.jpg");
+  background-image: url("../assets/images/perfil-2.webp");
 }
 .perfil-3 {
-  background-image: url("../assets/images/perfil-3.jpg");
+  background-image: url("../assets/images/perfil-3.webp");
 }
 
 .perfil-1,
@@ -147,10 +153,11 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.intalaciones-title {
+.instalaciones-title {
   color: var(--purple-color);
   font-weight: bold;
   text-align: center;
+  font-size: 2rem;
 }
 
 .instalaciones-desc-title {
@@ -195,4 +202,163 @@ h1 {
 
 .info-desc-item--2 {
   margin: 0;
+}
+
+@media screen and (min-width: 1020px) {
+  h1{
+    font-size: 5vw;
+  }
+  .subtitle{
+    font-size: 2vw;
+  }
+  .tour-link{
+    font-size: 1.7rem;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .tour-link:hover{
+    opacity: .9;
+    text-decoration: underline;
+  }
+
+  .about-us{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80vh;
+    /* padding: .5rem 0; */
+  }
+
+  .about-us-description{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 1rem 1rem 1rem 1rem; */
+  }
+
+  .about-us-description-p{
+    width: 60%;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  .about-us-description-title{
+    width: 60%;
+    font-size: 2.3rem;
+    margin-bottom: .5rem;
+    text-align: left;
+  }
+  
+  .about-us-description-link{
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+  }
+
+  .about-us-img{
+    width: 100%;
+    height: auto;
+  }
+
+  .general-info{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 1rem;
+  }
+
+  .info-description-p{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .info-perfiles{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .perfil-general{
+    flex-basis: 32%;
+    height: 300px;  
+  }
+
+  .instalaciones-contenedor{
+    display: flex;
+    flex-flow: column nowrap;
+    height: auto;
+  }
+
+  .instalaciones-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+
+  .instalaciones{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 32%;
+    background-color: #fff;
+  }
+
+  .instalaciones-description{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+
+
+  .instalaciones-img{
+    width: 100%;
+    height: 300px;
+  }
+
+  .instalaciones-desc-p{
+    padding: 0 1rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-main{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 1rem;
+  }
+
+  .footer-img{
+    width: 100%;
+    height: 65vh;
+  }
+
+  .contact-info{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .text-desc-info{
+    flex-basis: 40%;
+  }
+
+  .text-info-title{
+    font-size: 3rem;
+  }
+
+  .text-info-p{
+    font-size: 1.5rem;
+  }
+  
+  .info-desc{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .info-desc-item--m{
+    margin-top: 1.170rem;
+  }
 }
